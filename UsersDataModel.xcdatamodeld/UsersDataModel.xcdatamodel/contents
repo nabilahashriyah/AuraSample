@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H15" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Caregiver" representedClassName="Caregiver" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isPrimary" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phonenumber" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NotificationList" representedClassName="NotificationList" syncable="YES" codeGenerationType="class">
+        <attribute name="addr" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sender" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="ofNotificationID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NotificationName" inverseName="details" inverseEntity="NotificationName"/>
+    </entity>
+    <entity name="NotificationName" representedClassName="NotificationName" syncable="YES" codeGenerationType="class">
+        <attribute name="addr" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="landmark" optional="YES" attributeType="String"/>
+        <relationship name="details" optional="YES" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="NotificationList" inverseName="ofNotificationID" inverseEntity="NotificationList"/>
+    </entity>
+    <entity name="SeizureData" representedClassName="SeizureData" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isHelped" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="moods" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="startdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trigger" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Caregiver" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="SeizureData" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="NotificationName" positionX="-54" positionY="45" width="128" height="118"/>
+        <element name="NotificationList" positionX="-45" positionY="63" width="128" height="148"/>
+    </elements>
+</model>

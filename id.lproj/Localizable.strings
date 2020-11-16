@@ -1,0 +1,91 @@
+
+/*
+  Localizations.strings
+  Aura
+
+  Created by Stevhen on 22/10/20.
+  
+*/
+
+// Public Component
+"Back" = "Kembali";
+"Profile" = "Profil";
+"Cancel" = "Batalkan";
+"Edit" = "Edit";
+"Restart App" = "Tutup Aplikasi";
+"Yes" = "Ya";
+"No" = "Tidak";
+
+// Home
+"Alert Surroundings"="Peringati Sekitar";
+
+// Delay Screen
+"Alerting Surroundings"="Memperingati Sekitar";
+"Sending your current location to your caregivers, please find a safe place" = "Mengirim lokasi Anda saat ini ke kerabat Anda, carilah tempat aman";
+"in"="dalam";
+"seconds"="detik";
+
+// Settings
+"Create a Profile" = "Buat Profil";
+"Sign in to save your seizures data and connect with your caregivers." = "Sign in to save your seizures data and connect with your caregivers.";
+"Medical Details" = "Detail Medis";
+"Health Profile" = "Profil Kesehatan";
+"Seizure Logs" = "Riwayat Kejang";
+"Settings" = "Settings";
+"Help Delay" = "Jeda Waktu";
+"Alert Sounds" = "Suara Peringatan";
+"Apple Health Sync" = "Sinkronisasi Apple Health";
+"Language" = "Bahasa";
+"Support" = "Dukungan";
+"Tutorial" = "Tutorial";
+"Rate Aura App" = "Beri Nilai Aura";
+"Invite A Friend" = "Undang Teman";
+"Camera" = "Kamera";
+"Photo Album" = "Album Foto";
+"Alert Sounds" = "Suara Peringatan";
+"Language" = "Bahasa";
+"App Language" = "Bahasa Aplikasi";
+"First Aid Language" = "Bahasa Pertolongan Pertama";
+"Delay Time" = "Waktu Jeda";
+"In order to change language, app need to be restarted."="Aplikasi harus ditutup untuk mengganti bahasa.";
+"Emergency Contacts"="Kontak Darurat";
+
+// Health Profile
+"First Name" = "Nama Depan";
+"Last Name" = "Nama Belakang";
+"Date of Birth" = "Tanggal Lahir";
+"Sex" = "Jenis Kelamin";
+"Blood Type" = "Golongan Darah";
+"Weight" = "Berat Badan";
+"Height" = "Tinggi Badan";
+
+// Nearby Hospital
+
+
+"Open Map" = "Buka Peta";
+"Call" = "Telepon";
+"Seizure alert" = "Peringatan Kejang";
+"Alert" = "Peringatan";
+"Seizure Location" = "Lokasi Kejang";
+"Call Emergency" = "Telfon Nomor Darurat";
+
+//Notification
+"Just now" = "Baru saja";
+"h" = "j";
+"d" = "h";
+"yesterday" = "kemarin";
+"days ago" = "hari yang lalu";
+"hours ago" = "jam yang lalu";
+"minutes ago" = "menit yang lalu";
+"an hour ago" = "1 jam yang lalu";
+"a minute ago" = "1 menit yang lalu";
+
+"Alerted" = "Pemberitahuan";
+"Helped" = "Ditolong";
+"Need Help" = "Butuh pertolongan";
+"Emergency Called" = "Menelepon darurat";
+"Seizure occurs more than 5 minutes" = "Kejang terjadi leboh dari 5 menit";
+"Seizure ended" = "Kejang berakhir";
+"Moving" = "Bergerak";
+
+"Seizure Notifications" = "Pemberitahuan Kejang";

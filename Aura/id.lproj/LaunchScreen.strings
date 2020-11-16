@@ -1,0 +1,62 @@
+
+/*
+  Localizations.strings
+  Aura
+
+  Created by Stevhen on 22/10/20.
+  
+*/
+
+// Public Component
+"Back" = "Kembali";
+"Profile" = "Profil";
+"Cancel" = "Batalkan";
+"Edit" = "Edit";
+
+// Home
+"Alert Surroundings"="Peringati Sekitar";
+
+// Delay Screen
+"Alerting Surroundings"="Alerting Surroundings";
+"Sending your current location,please find a safe place" = "Mengirim lokasi anda,carilah tempat aman";
+
+// Settings
+"Create a Profile" = "Buat Profil";
+"Sign in to save your seizures data and connect with your caregivers." = "Sign in to save your seizures data and connect with your caregivers.";
+"Medical Details" = "Detail Medis";
+"Health Profile" = "Profil Kesehatan";
+"Seizure Logs" = "Riwayat Kejang";
+"Settings" = "Settings";
+"Help Delay" = "Jeda Waktu";
+"Alert Sounds" = "Suara Peringatan";
+"Apple Health Sync" = "Sinkronisasi Apple Health";
+"Language" = "Bahasa";
+"Support" = "Dukungan";
+"Tutorial" = "Tutorial";
+"Rate Aura App" = "Beri Nilai Aura";
+"Invite A Friend" = "Undang Teman";
+"Camera" = "Kamera";
+"Photo Album" = "Album Foto";
+"Alert Sounds" = "Suara Peringatan";
+"Language" = "Bahasa";
+"App Language" = "Bahasa Aplikasi";
+"First Aid Language" = "Bahasa Pertolongan Pertama";
+"Delay Time" = "Waktu Jeda";
+
+// Health Profile
+"First Name" = "Nama Depan";
+"Last Name" = "Nama Belakang";
+"Date of Birth" = "Tanggal Lahir";
+"Sex" = "Jenis Kelamin";
+"Blood Type" = "Golongan Darah";
+"Weight" = "Berat Badan";
+"Height" = "Tinggi Badan";
+
+// Nearby Hospital
+"Nearby Hospital" = "Rumah Sakit Terdekat";
+"Open Map" = "Buka Peta";
+"Call" = "Telfon";
+"Seizure alert" = "Peringatan Kejang";
+"Alert" = "Peringatan";
+"Seizure Location" = "Lokasi Kejang";
+"Call Emergency" = "Telfon Nomor Darurat";

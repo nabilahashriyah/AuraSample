@@ -1,0 +1,61 @@
+/* 
+  Localizations.strings
+  Aura
+
+  Created by Stevhen on 22/10/20.
+  
+*/
+
+// Public Component
+"Back" = "Back";
+"Profile" = "Profile";
+"Cancel" = "Cancel";
+"Edit" = "Edit";
+
+// Home
+"Alert Surroundings"="Alert Surroundings";
+
+// Delay Screen
+"Alerting Surroundings"="Alerting Surroundings";
+"Sending your current location,please find a safe place" = "Sending your current location, please find a safe place";
+
+// Settings
+"Create a Profile" = "Create a Profile";
+"Sign in to save your seizures data and connect with your caregivers." = "Sign in to save your seizures data and connect with your caregivers.";
+"Medical Details" = "Medical Details";
+"Health Profile" = "Health Profile";
+"Seizure Logs" = "Seizure Logs";
+"Settings" = "Settings";
+"Help Delay" = "Help Delay";
+"Alert Sounds" = "Alert Sounds";
+"Apple Health Sync" = "Apple Health Sync";
+"Language" = "Language";
+"Support" = "Support";
+"Tutorial" = "Tutorial";
+"Rate Aura App" = "Rate Aura App";
+"Invite A Friend" = "Invite A Friend";
+"Camera" = "Camera";
+"Photo Album" = "Photo Album";
+"Alert Sounds" = "Alert Sounds";
+"Language" = "Language";
+"App Language" = "App Language";
+"First Aid Language" = "First Aid Language";
+
+// Health Profile
+"First Name" = "First Name";
+"Last Name" = "Last Name";
+"Date of Birth" = "Date of Birth";
+"Sex" = "Sex";
+"Blood Type" = "Blood Type";
+"Weight" = "Weight";
+"Height" = "Height";
+
+// Nearby Hospital
+"Nearby Hospital" = "Nearby Hospital";
+"Open Map" = "Open Map";
+"Call" = "Call";
+"Seizure alert" = "Seizure alert";
+"Alert" = "Alert";
+"Seizure Location" = "Seizure Location";
+"Call Emergency" = "Call Emergency";
+

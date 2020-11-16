@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AuraWatchApp" customModuleProvider="target">
+                    <items>
+                        <button alignment="center" verticalAlignment="center" backgroundImage="alarm_button" id="nHu-dy-49L">
+                            <connections>
+                                <action selector="alertButton" destination="AgC-eL-Hgc" id="hPc-s1-4Tb"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="159" y="263"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AuraWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="AuraWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="643"/>
+        </scene>
+        <!--DelayScreen-->
+        <scene sceneID="mYR-03-gmu">
+            <objects>
+                <controller identifier="DelayScreen" fullBounds="YES" fullScreen="YES" id="U61-Cg-d9r" customClass="DelayInterfaceController" customModule="AuraWatchApp_Extension">
+                    <items>
+                        <label alignment="center" text="Alerting in..." id="b8o-0g-iqo">
+                            <color key="textColor" red="0.99607843139999996" green="0.71372549019999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                        <group width="1" height="146" alignment="center" verticalAlignment="center" layout="vertical" id="nzb-SV-IHz">
+                            <items>
+                                <group width="1" alignment="center" verticalAlignment="bottom" id="1de-xz-qqi">
+                                    <items>
+                                        <timer height="43" alignment="center" verticalAlignment="bottom" previewedSeconds="3" id="MSh-1t-qgc">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="51"/>
+                                            <calendarUnit key="units" second="YES"/>
+                                        </timer>
+                                        <label width="10" alignment="center" verticalAlignment="bottom" text="s" id="Ota-6w-vhV">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="19"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" height="30" alignment="center" verticalAlignment="bottom" id="3wE-Gg-aNc"/>
+                                <button width="1" alignment="center" verticalAlignment="bottom" title="Cancel" id="Ch3-9h-Wlm">
+                                    <connections>
+                                        <action selector="cancelButton" destination="U61-Cg-d9r" id="2iO-xy-fEx"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="timerCounter" destination="MSh-1t-qgc" id="yJ4-mC-Xba"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="420" y="263"/>
+        </scene>
+        <!--MainScreen-->
+        <scene sceneID="aal-JB-pyz">
+            <objects>
+                <controller identifier="MainScreen" fullScreen="YES" id="oPa-Fr-gTM" customClass="MainInterfaceController" customModule="AuraWatchApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="NDM-YU-qIE">
+                            <items>
+                                <group width="1" height="20" alignment="center" id="bKL-tO-d4t"/>
+                                <label width="1" alignment="center" text="I have epilepsy" textAlignment="left" id="Av3-5C-P2T">
+                                    <color key="textColor" red="0.99607843139999996" green="0.71372549019999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                </label>
+                                <label width="1" alignment="center" text="Text" numberOfLines="10" id="ewx-FZ-0AC">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                </label>
+                                <label width="1" height="30" alignment="center" verticalAlignment="center" text="SCAN HERE" textAlignment="center" id="0eA-a1-DFJ">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                </label>
+                                <imageView alignment="center" verticalAlignment="center" image="qrCode" id="dMI-FG-yQR"/>
+                                <group width="1" height="15" alignment="center" verticalAlignment="center" id="Qiw-UH-bff"/>
+                                <button width="1" alignment="center" verticalAlignment="center" title="Done" id="Lv8-ad-IhI">
+                                    <color key="backgroundColor" red="0.53725490200000003" green="0.38431372549999998" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="doneButton" destination="oPa-Fr-gTM" id="u6L-a8-PSs"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="uhC-2q-mP0">
+                                    <connections>
+                                        <action selector="tapRecognizer:" destination="oPa-Fr-gTM" id="aXH-4h-FC7"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="descEpilepsy" destination="ewx-FZ-0AC" id="tcW-Xh-LWM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="659" y="186"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alarm_button" width="150" height="150"/>
+        <image name="qrCode" width="562.5" height="562.5"/>
+    </resources>
+</document>

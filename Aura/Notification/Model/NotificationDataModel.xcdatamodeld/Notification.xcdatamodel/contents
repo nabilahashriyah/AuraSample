@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NotificationList" representedClassName="NotificationList" syncable="YES" codeGenerationType="class">
+        <attribute name="addr" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sender" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="ofNotificationID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NotificationName" inverseName="details" inverseEntity="NotificationName"/>
+    </entity>
+    <entity name="NotificationName" representedClassName="NotificationName" syncable="YES" codeGenerationType="class">
+        <attribute name="addr" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="landmark" optional="YES" attributeType="String"/>
+        <relationship name="details" optional="YES" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="NotificationList" inverseName="ofNotificationID" inverseEntity="NotificationList"/>
+    </entity>
+    <elements>
+        <element name="NotificationList" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="NotificationName" positionX="-63" positionY="45" width="128" height="118"/>
+    </elements>
+</model>
